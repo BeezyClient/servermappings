@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "krabmc",
+  "name": "KrabMC",
+  "addresses": {
+    "primary": "krabmc.pl",
+    "suffixes": [
+      "krabmc.pl"
+    ]
+  },
+  "accentColor": "#cb5154",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

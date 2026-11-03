@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "hyping",
+  "name": "Hyping",
+  "addresses": {
+    "primary": "play.hyping.fr",
+    "suffixes": [
+      "hyping.fr"
+    ]
+  },
+  "accentColor": "#3cacfc",
+  "minecraft": {
+    "versions": [
+      "26.2",
+      "26.1"
+    ],
+    "recommended": "26.1.2"
+  }
+}

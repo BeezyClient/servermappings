@@ -1,0 +1,32 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "minemenclub",
+  "name": "Minemen Club",
+  "addresses": {
+    "primary": "minemen.club",
+    "suffixes": [
+      "minemen.club",
+      "mineman.club",
+      "icantjoinlmfao.club",
+      "euicantjoinlmfao.club",
+      "minemenclub.com",
+      "pvp.bar",
+      "zonix.us"
+    ]
+  },
+  "accentColor": "#d025c8",
+  "minecraft": {
+    "versions": [
+      "1.7.*",
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*"
+    ],
+    "recommended": "1.21.1"
+  }
+}

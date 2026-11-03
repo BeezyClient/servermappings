@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "mustpvp",
+  "name": "MustPvP",
+  "addresses": {
+    "primary": "mustpvp.pl",
+    "suffixes": [
+      "mustpvp.pl"
+    ]
+  },
+  "accentColor": "#21d0e1",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

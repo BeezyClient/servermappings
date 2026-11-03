@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "migosmc",
+  "name": "MigosMC",
+  "addresses": {
+    "primary": "migosmc.ru",
+    "suffixes": [
+      "migosmc.ru"
+    ]
+  },
+  "accentColor": "#a41d01",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

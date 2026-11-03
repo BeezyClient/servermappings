@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "rederevo",
+  "name": "Rederevo",
+  "addresses": {
+    "primary": "rederevo.com",
+    "suffixes": [
+      "rederevo.com"
+    ]
+  },
+  "accentColor": "#00ffe0",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

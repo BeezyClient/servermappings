@@ -1,0 +1,62 @@
+This repository contains two kinds of material under two different licences.
+
+==============================================================================
+1. Code and documentation: MIT
+==============================================================================
+
+Applies to: scripts/, schema/, .github/, README.md, CONTRIBUTING.md, .editorconfig,
+.gitignore, and this file.
+
+MIT License
+
+Copyright (c) 2026 Beezy Client
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+==============================================================================
+2. Server data and artwork: owners keep their rights, Beezy gets a licence
+==============================================================================
+
+Applies to: everything under servers/ (metadata.json files and images) and to the
+same material as it appears in built output (dist/).
+
+This material is NOT licensed under MIT. Server names, descriptions, logos, banners,
+backgrounds and wordmarks remain the property of their respective owners, and names
+and logos may be trademarks.
+
+By submitting material to this repository (for example with a pull request), the
+contributor confirms that they own it or are authorised by the server's owner to submit
+it, and grants Beezy Client a worldwide, royalty-free, non-exclusive licence, which may
+be revoked for the future by removing the material from this repository, to:
+
+  - store, reproduce, resize, re-encode and crop the material;
+  - display it in Beezy Client software (launcher, game client, website) and in services
+    integrated with it, such as Discord Rich Presence;
+  - distribute it to Beezy users as part of Beezy's server catalogue,
+
+solely to identify and present the server. Beezy may keep copies it has already
+distributed to users when material is removed, and may refuse or remove any material.
+
+Anyone else may read and fork this repository, but may use material under servers/ only
+as far as the law allows without permission from its owners (for example to identify a
+server by name). Displaying the artwork in another product requires the owner's
+permission, not Beezy's.
+
+Inclusion in this repository does not mean Beezy endorses, sponsors or is affiliated
+with any server, nor that any server endorses Beezy.

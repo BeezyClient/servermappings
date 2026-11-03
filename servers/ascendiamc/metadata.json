@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "ascendiamc",
+  "name": "AscendiaMC",
+  "addresses": {
+    "primary": "play.ascendiamc.com",
+    "suffixes": [
+      "ascendiamc.com",
+      "ascendiamc.it"
+    ]
+  },
+  "accentColor": "#3f197d",
+  "minecraft": {
+    "versions": [
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

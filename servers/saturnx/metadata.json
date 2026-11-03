@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "saturnx",
+  "name": "Saturn-X - Space Server",
+  "addresses": {
+    "primary": "play.saturn-x.space",
+    "suffixes": [
+      "saturn-x.space"
+    ]
+  },
+  "accentColor": "#e5ad51",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*"
+    ],
+    "recommended": "1.21.11"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "castplay",
+  "name": "Castplay",
+  "addresses": {
+    "primary": "castplay.pl",
+    "suffixes": [
+      "castplay.pl"
+    ]
+  },
+  "accentColor": "#318123",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

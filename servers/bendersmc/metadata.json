@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "bendersmc",
+  "name": "BendersMC",
+  "addresses": {
+    "primary": "play.bendersmc.co",
+    "suffixes": [
+      "bendersmc.co"
+    ]
+  },
+  "accentColor": "#0040a6",
+  "minecraft": {
+    "versions": [
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

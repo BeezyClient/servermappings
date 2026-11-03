@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "kaizenmc",
+  "name": "KaizenMC",
+  "addresses": {
+    "primary": "kaizenmc.gg",
+    "suffixes": [
+      "kaizenmc.gg",
+      "kaizenmc.com.br",
+      "kaizen.gay"
+    ]
+  },
+  "accentColor": "#890bca",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

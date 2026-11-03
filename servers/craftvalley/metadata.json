@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "craftvalley",
+  "name": "CraftValley",
+  "addresses": {
+    "primary": "play.craftvalley.de",
+    "suffixes": [
+      "craftvalley.de"
+    ]
+  },
+  "accentColor": "#4ea5df",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

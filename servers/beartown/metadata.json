@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "beartown",
+  "name": "Beartown",
+  "addresses": {
+    "primary": "beartown.kr",
+    "suffixes": [
+      "beartown.kr"
+    ]
+  },
+  "accentColor": "#8ec4e4",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.1",
+      "26.2",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

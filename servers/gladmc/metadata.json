@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "gladmc",
+  "name": "GladMC",
+  "addresses": {
+    "primary": "jogar.gladmc.com",
+    "suffixes": [
+      "gladmc.com"
+    ]
+  },
+  "accentColor": "#c65d1e",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*"
+    ],
+    "recommended": "1.21.11"
+  }
+}

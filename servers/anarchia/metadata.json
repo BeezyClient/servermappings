@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "anarchia",
+  "name": "Anarchia",
+  "addresses": {
+    "primary": "anarchia.gg",
+    "suffixes": [
+      "anarchia.gg",
+      "anarhia.gg"
+    ]
+  },
+  "accentColor": "#f6da1f",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

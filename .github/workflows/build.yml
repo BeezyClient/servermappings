@@ -1,0 +1,42 @@
+# Builds dist/ (index.json + normalised artwork) for every push to main and keeps it as a
+# workflow artifact. Nothing is uploaded anywhere: Beezy's release pipeline pulls this
+# repository, rebuilds, signs and publishes (see README, "How the data reaches Beezy").
+name: Build
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Script tests
+        run: python -m unittest discover -s scripts -p 'test_*.py'
+
+      - name: Build
+        run: python scripts/build.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: servermappings-dist
+          path: dist/
+          retention-days: 30
+          if-no-files-found: error

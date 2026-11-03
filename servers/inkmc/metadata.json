@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "inkmc",
+  "name": "InkMC",
+  "addresses": {
+    "primary": "inkmc.pl",
+    "suffixes": [
+      "inkmc.pl"
+    ]
+  },
+  "accentColor": "#d69619",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

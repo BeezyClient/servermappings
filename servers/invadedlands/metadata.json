@@ -1,0 +1,30 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "invadedlands",
+  "name": "InvadedLands",
+  "addresses": {
+    "primary": "invadedlands.net",
+    "suffixes": [
+      "invadedlands.net",
+      "skeppylovesflipflops.xyz",
+      "pvplands.net",
+      "nitro.rip"
+    ]
+  },
+  "accentColor": "#e89601",
+  "minecraft": {
+    "versions": [
+      "1.7.*",
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

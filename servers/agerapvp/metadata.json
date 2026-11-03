@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "agerapvp",
+  "name": "AgeraPvP Club",
+  "addresses": {
+    "primary": "mc.agerapvp.club",
+    "suffixes": [
+      "agerapvp.club",
+      "agerapvp.net"
+    ]
+  },
+  "accentColor": "#3154d0",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.2",
+      "26.1"
+    ],
+    "recommended": "26.1.2"
+  }
+}

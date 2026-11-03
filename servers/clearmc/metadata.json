@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "clearmc",
+  "name": "ClearMC",
+  "addresses": {
+    "primary": "clearmc.pl",
+    "suffixes": [
+      "clearmc.pl"
+    ]
+  },
+  "accentColor": "#c53ed0",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

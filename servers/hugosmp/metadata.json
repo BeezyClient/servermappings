@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "hugosmp",
+  "name": "HugoSMP",
+  "addresses": {
+    "primary": "hugosmp.net",
+    "suffixes": [
+      "hugosmp.net"
+    ]
+  },
+  "accentColor": "#a5020c",
+  "minecraft": {
+    "versions": [
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

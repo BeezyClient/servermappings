@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "lemoncloud",
+  "name": "LemonCloud",
+  "addresses": {
+    "primary": "play.lemoncloud.org",
+    "suffixes": [
+      "lemoncloud.org"
+    ]
+  },
+  "accentColor": "#4eb5ee",
+  "minecraft": {
+    "versions": [
+      "1.20.*",
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

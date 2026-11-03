@@ -1,0 +1,32 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "pvplegacy",
+  "name": "PvP Legacy",
+  "description": "Competitive 1.8-style PvP: practice, duels and ranked matches.",
+  "addresses": {
+    "primary": "pvplegacy.net",
+    "ping": "play.pvplegacy.net",
+    "suffixes": [
+      "pvplegacy.net"
+    ]
+  },
+  "accentColor": "#ff4d6a",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.21.*"
+    ],
+    "recommended": "1.8.9"
+  },
+  "languages": [
+    "en"
+  ],
+  "gamemodes": [
+    "practice",
+    "duels",
+    "pvp"
+  ],
+  "presence": {
+    "gameName": "PvP Legacy"
+  }
+}

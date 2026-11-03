@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "rinaorc",
+  "name": "Rinaorc",
+  "addresses": {
+    "primary": "rinaorc.com",
+    "suffixes": [
+      "rinaorc.com"
+    ]
+  },
+  "accentColor": "#fcbe43",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

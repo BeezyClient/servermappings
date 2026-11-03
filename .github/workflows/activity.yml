@@ -1,0 +1,45 @@
+# Once a day: pings every listed server, records when each last answered
+# (status/last-seen.json) and sets or clears "inactive" by itself. See scripts/activity.py.
+name: Activity
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: activity
+  cancel-in-progress: false
+
+jobs:
+  activity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Ping servers and update inactive flags
+        run: python scripts/activity.py | tee "$RUNNER_TEMP/activity.txt"
+
+      - name: Validate
+        run: python scripts/validate.py
+
+      - name: Commit
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A servers status
+          { echo "Update server activity"; echo; tail -n +2 "$RUNNER_TEMP/activity.txt"; } > "$RUNNER_TEMP/message.txt"
+          git commit -q -F "$RUNNER_TEMP/message.txt"
+          git push

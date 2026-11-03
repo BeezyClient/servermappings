@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "centrumpvp",
+  "name": "CentrumPvP",
+  "addresses": {
+    "primary": "centrumpvp.pl",
+    "suffixes": [
+      "centrumpvp.pl",
+      "cpvp.pl"
+    ]
+  },
+  "accentColor": "#edbe00",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

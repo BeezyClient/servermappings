@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "archmc",
+  "name": "ArchMC",
+  "addresses": {
+    "primary": "arch.mc",
+    "suffixes": [
+      "arch.mc",
+      "arch.lol"
+    ]
+  },
+  "accentColor": "#a90911",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*"
+    ],
+    "recommended": "1.21.1"
+  }
+}

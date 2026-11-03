@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "purpleprison",
+  "name": "Purple Prison",
+  "addresses": {
+    "primary": "purpleprison.net",
+    "suffixes": [
+      "purpleprison.net",
+      "purpleprison.com",
+      "purple.wtf",
+      "purpleprison.org",
+      "purpleore.net",
+      "purpleprison.co",
+      "prisonfun.co",
+      "moxmc.net"
+    ]
+  },
+  "accentColor": "#ab2cd4",
+  "minecraft": {
+    "versions": [
+      "1.7.*",
+      "1.8.*",
+      "1.9.*",
+      "1.10.*",
+      "1.11.*",
+      "1.12.*",
+      "1.13.*",
+      "1.14.*",
+      "1.15.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*"
+    ],
+    "recommended": "1.21.11"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "lifestealsmp",
+  "name": "LifeStealSMP",
+  "addresses": {
+    "primary": "mc.lifestealsmp.com",
+    "suffixes": [
+      "lifestealsmp.com",
+      "lifesteal.rip"
+    ]
+  },
+  "accentColor": "#ee0b0b",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

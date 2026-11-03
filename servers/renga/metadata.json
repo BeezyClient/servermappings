@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "renga",
+  "name": "Renga Network",
+  "addresses": {
+    "primary": "renga.zip",
+    "suffixes": [
+      "renga.zip"
+    ]
+  },
+  "accentColor": "#c43a48",
+  "minecraft": {
+    "versions": [
+      "1.7.*",
+      "1.8.*"
+    ],
+    "recommended": "1.8.9"
+  }
+}

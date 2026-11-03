@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "finerpg",
+  "name": "FineRPG",
+  "addresses": {
+    "primary": "finerpg.pl",
+    "suffixes": [
+      "finerpg.pl"
+    ]
+  },
+  "accentColor": "#b9802e",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

@@ -1,0 +1,108 @@
+# Checks a pull request. Runs the scripts and the schema of the BASE branch against the
+# servers of the pull request, so a pull request cannot loosen the rules it is judged by.
+# `pull_request`, not `pull_request_target`: no secrets, read-only token.
+name: Validate
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Schema, addresses and artwork
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout trusted base
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+
+      - name: Checkout pull request (untrusted data)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: pr
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Script tests
+        run: python -m unittest discover -s scripts -p 'test_*.py'
+
+      - name: Validate servers
+        env:
+          SERVERMAPPINGS_SERVERS_DIR: pr/servers
+        run: python scripts/validate.py
+
+      - name: Only servers/<id>/ for outside contributors
+        env:
+          ASSOCIATION: ${{ github.event.pull_request.author_association }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          case "$ASSOCIATION" in OWNER|MEMBER|COLLABORATOR) exit 0;; esac
+          outside="$(git -C pr diff --name-only "$BASE"...HEAD | grep -v '^servers/[^/]*/[^/]*$' || true)"
+          if [ -n "$outside" ]; then
+            echo "::error::A server pull request only changes files in servers/<id>/. Also changed:"
+            echo "$outside"
+            exit 1
+          fi
+
+  ownership:
+    name: Ownership proof
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout trusted base
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+
+      - name: Checkout pull request (untrusted data)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: pr
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Prove the author speaks for every changed server
+        env:
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+          ASSOCIATION: ${{ github.event.pull_request.author_association }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          SERVERMAPPINGS_SERVERS_DIR: pr/servers
+        run: |
+          case "$ASSOCIATION" in OWNER|MEMBER|COLLABORATOR)
+            echo "Beezy maintainer: ownership is checked by hand."; exit 0;;
+          esac
+          failed=0
+          for id in $(git -C pr diff --name-only "$BASE"...HEAD -- servers/ | cut -d/ -f2 | sort -u); do
+            [ -f "pr/servers/$id/metadata.json" ] || { echo "$id: removed (a maintainer will confirm)"; continue; }
+            # Someone already listed in the base entry's maintainers needs no new proof.
+            if [ -f "servers/$id/metadata.json" ] && python -c '
+          import json, os, sys
+          names = json.load(open(sys.argv[1])).get("maintainers", [])
+          sys.exit(0 if os.environ["AUTHOR"].lower() in (n.lower() for n in names) else 1)
+          ' "servers/$id/metadata.json"; then
+              echo "$id: $AUTHOR is a listed maintainer"; continue
+            fi
+            python scripts/verify_owner.py "$id" "$AUTHOR" || failed=1
+          done
+          exit $failed

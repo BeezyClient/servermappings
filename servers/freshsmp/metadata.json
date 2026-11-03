@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "freshsmp",
+  "name": "FreshSMP",
+  "addresses": {
+    "primary": "play.freshsmp.fun",
+    "suffixes": [
+      "freshsmp.fun"
+    ]
+  },
+  "accentColor": "#36e2f8",
+  "minecraft": {
+    "versions": [
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

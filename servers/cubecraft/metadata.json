@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "cubecraft",
+  "name": "CubeCraft",
+  "description": "A minigames network with Bed Wars, SkyWars, EggWars, Parkour and SkyBlock.",
+  "addresses": {
+    "primary": "play.cubecraft.net",
+    "suffixes": [
+      "cubecraft.net"
+    ]
+  },
+  "accentColor": "#4dc3ff",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.21.*",
+      "26.1.*",
+      "26.2.*",
+      "26.3.*"
+    ],
+    "recommended": "1.21.11"
+  },
+  "regions": [
+    "EU"
+  ],
+  "languages": [
+    "en"
+  ],
+  "gamemodes": [
+    "minigames",
+    "bedwars",
+    "skywars",
+    "parkour",
+    "skyblock"
+  ],
+  "links": {
+    "website": "https://www.cubecraft.net/"
+  },
+  "presence": {
+    "gameName": "CubeCraft"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "axelcraft",
+  "name": "AxelCraft",
+  "addresses": {
+    "primary": "axelcraft.pl",
+    "suffixes": [
+      "axelcraft.pl"
+    ]
+  },
+  "accentColor": "#14769f",
+  "minecraft": {
+    "versions": [
+      "1.19.*",
+      "1.20.*",
+      "1.21.*"
+    ],
+    "recommended": "1.21.11"
+  }
+}

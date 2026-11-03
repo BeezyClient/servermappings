@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "mcrybar",
+  "name": "MCRybar",
+  "addresses": {
+    "primary": "mcrybar.cz",
+    "suffixes": [
+      "mcrybar.cz"
+    ]
+  },
+  "accentColor": "#12a4f4",
+  "minecraft": {
+    "versions": [
+      "1.21.*"
+    ],
+    "recommended": "1.21.11"
+  }
+}

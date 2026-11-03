@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "docasmp",
+  "name": "DocaSMP",
+  "addresses": {
+    "primary": "docasmp.net",
+    "suffixes": [
+      "docasmp.net"
+    ]
+  },
+  "accentColor": "#186ef9",
+  "minecraft": {
+    "versions": [
+      "26.2",
+      "26.1"
+    ],
+    "recommended": "26.1.2"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "mineheart",
+  "name": "MineHeart",
+  "addresses": {
+    "primary": "play.mineheart.net",
+    "suffixes": [
+      "mineheart.net"
+    ]
+  },
+  "accentColor": "#dc3080",
+  "minecraft": {
+    "versions": [
+      "1.20.*",
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

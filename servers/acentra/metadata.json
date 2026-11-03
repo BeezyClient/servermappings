@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "acentra",
+  "name": "AcentraMC",
+  "addresses": {
+    "primary": "play.acentramc.com",
+    "suffixes": [
+      "acentramc.com",
+      "glance.top"
+    ]
+  },
+  "accentColor": "#a12100",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

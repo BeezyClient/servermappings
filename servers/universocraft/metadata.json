@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "universocraft",
+  "name": "UniversoCraft",
+  "addresses": {
+    "primary": "mc.universocraft.com",
+    "suffixes": [
+      "universocraft.com",
+      "universocraft.net",
+      "universocraft.es"
+    ]
+  },
+  "accentColor": "#0e8fe8",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "rapy",
+  "name": "Rapy",
+  "addresses": {
+    "primary": "rapy.pl",
+    "suffixes": [
+      "rapy.pl",
+      "jjsmp.pl",
+      "rapy.gg"
+    ]
+  },
+  "accentColor": "#db6622",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

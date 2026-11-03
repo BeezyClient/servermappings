@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "luckyvn",
+  "name": "LUCKYVN",
+  "addresses": {
+    "primary": "mc.luckyvn.com",
+    "suffixes": [
+      "luckyvn.com"
+    ]
+  },
+  "accentColor": "#ddc628",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

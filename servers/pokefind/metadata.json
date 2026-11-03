@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "pokefind",
+  "name": "PokeFind",
+  "addresses": {
+    "primary": "play.pokefind.co",
+    "suffixes": [
+      "pokefind.co"
+    ]
+  },
+  "accentColor": "#d5c002",
+  "minecraft": {
+    "versions": [
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

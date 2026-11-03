@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "diamondworld",
+  "name": "Diamondworld",
+  "addresses": {
+    "primary": "mc.diamondworld.pro",
+    "suffixes": [
+      "diamondworld.pro"
+    ]
+  },
+  "accentColor": "#f9a70d",
+  "minecraft": {
+    "versions": [
+      "1.21.*"
+    ],
+    "recommended": "1.21.11"
+  }
+}

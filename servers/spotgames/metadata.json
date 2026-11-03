@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "spotgames",
+  "name": "SpotGames",
+  "addresses": {
+    "primary": "spotgames.net",
+    "suffixes": [
+      "spotgames.net"
+    ]
+  },
+  "accentColor": "#f5a008",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.2",
+      "26.1"
+    ],
+    "recommended": "26.1.2"
+  }
+}

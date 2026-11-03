@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "quutio",
+  "name": "Quut.io",
+  "addresses": {
+    "primary": "mc.quut.io",
+    "suffixes": [
+      "quut.io"
+    ]
+  },
+  "accentColor": "#007dca",
+  "minecraft": {
+    "versions": [
+      "1.7.*",
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

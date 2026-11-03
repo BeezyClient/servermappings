@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "iostein",
+  "name": "iostein",
+  "addresses": {
+    "primary": "iostein.de",
+    "suffixes": [
+      "iostein.de",
+      "iostein.net"
+    ]
+  },
+  "accentColor": "#38ea28",
+  "minecraft": {
+    "versions": [
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

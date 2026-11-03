@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "pinkprison",
+  "name": "Pink Prison",
+  "addresses": {
+    "primary": "pinkprison.net",
+    "suffixes": [
+      "pinkprison.net",
+      "pinkprison.com"
+    ]
+  },
+  "accentColor": "#ef7dae",
+  "minecraft": {
+    "versions": [
+      "1.8.*"
+    ],
+    "recommended": "1.8.9"
+  }
+}

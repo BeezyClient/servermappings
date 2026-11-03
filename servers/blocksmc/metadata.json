@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "blocksmc",
+  "name": "BlocksMC",
+  "addresses": {
+    "primary": "premium.blocksmc.com",
+    "suffixes": [
+      "blocksmc.com"
+    ]
+  },
+  "accentColor": "#088ecf",
+  "minecraft": {
+    "versions": [
+      "1.7.*",
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.1",
+      "26.2",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

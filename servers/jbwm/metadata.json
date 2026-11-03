@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "jbwm",
+  "name": "Jbwm.pl",
+  "addresses": {
+    "primary": "jbwm.pl",
+    "suffixes": [
+      "jbwm.pl"
+    ]
+  },
+  "accentColor": "#c3008c",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "hoplite",
+  "name": "Hoplite",
+  "description": "Battle royale and duels in Minecraft, with a ranked competitive ladder.",
+  "addresses": {
+    "primary": "hoplite.gg",
+    "ping": "java.hoplite.gg",
+    "suffixes": [
+      "hoplite.gg"
+    ]
+  },
+  "accentColor": "#ffe5c5",
+  "minecraft": {
+    "versions": [
+      "1.21.*",
+      "26.1.*",
+      "26.2.*",
+      "26.3.*"
+    ],
+    "recommended": "1.21.11"
+  },
+  "regions": [
+    "NA"
+  ],
+  "languages": [
+    "en"
+  ],
+  "gamemodes": [
+    "battle-royale",
+    "duels",
+    "pvp"
+  ],
+  "presence": {
+    "gameName": "Hoplite"
+  }
+}

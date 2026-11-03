@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "donutsmp",
+  "name": "DonutSMP",
+  "description": "A large survival SMP with an economy, teams and PvP in the wilderness.",
+  "addresses": {
+    "primary": "donutsmp.net",
+    "ping": "java.donutsmp.net",
+    "suffixes": [
+      "donutsmp.net"
+    ]
+  },
+  "accentColor": "#00a6ff",
+  "minecraft": {
+    "versions": [
+      "1.21.*",
+      "26.1.*",
+      "26.2.*",
+      "26.3.*"
+    ],
+    "recommended": "1.21.11"
+  },
+  "regions": [
+    "NA"
+  ],
+  "languages": [
+    "en"
+  ],
+  "gamemodes": [
+    "smp",
+    "survival",
+    "economy",
+    "pvp"
+  ],
+  "presence": {
+    "gameName": "DonutSMP"
+  }
+}

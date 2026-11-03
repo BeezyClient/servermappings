@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "blurkit",
+  "name": "Blurkit Network",
+  "addresses": {
+    "primary": "blurkit.net",
+    "suffixes": [
+      "blurkit.net"
+    ]
+  },
+  "accentColor": "#d59511",
+  "minecraft": {
+    "versions": [
+      "1.7.*",
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

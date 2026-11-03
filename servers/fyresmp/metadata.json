@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "fyresmp",
+  "name": "FyreSMP",
+  "addresses": {
+    "primary": "fyresmp.net",
+    "suffixes": [
+      "fyresmp.net"
+    ]
+  },
+  "accentColor": "#df5c15",
+  "minecraft": {
+    "versions": [
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

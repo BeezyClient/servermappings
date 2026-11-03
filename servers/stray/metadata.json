@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "stray",
+  "name": "Stray PvP",
+  "addresses": {
+    "primary": "stray.gg",
+    "suffixes": [
+      "stray.gg"
+    ]
+  },
+  "accentColor": "#5cd4fa",
+  "minecraft": {
+    "versions": [
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

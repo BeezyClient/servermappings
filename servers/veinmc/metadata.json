@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "veinmc",
+  "name": "VeinMC",
+  "addresses": {
+    "primary": "play.veinmc.com",
+    "suffixes": [
+      "veinmc.com"
+    ]
+  },
+  "accentColor": "#1ad3f1",
+  "minecraft": {
+    "versions": [
+      "1.5.*",
+      "1.8.*"
+    ],
+    "recommended": "1.8.9"
+  }
+}

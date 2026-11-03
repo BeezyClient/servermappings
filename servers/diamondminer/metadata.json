@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "diamondminer",
+  "name": "DiamondMiner",
+  "addresses": {
+    "primary": "diamondminer.vip",
+    "suffixes": [
+      "diamondminer.vip"
+    ]
+  },
+  "accentColor": "#3edac2",
+  "minecraft": {
+    "versions": [
+      "26.2",
+      "26.1"
+    ],
+    "recommended": "26.1.2"
+  }
+}

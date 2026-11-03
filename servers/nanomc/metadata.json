@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "nanomc",
+  "name": "NanoMC",
+  "addresses": {
+    "primary": "nanomc.pl",
+    "suffixes": [
+      "nanomc.pl"
+    ]
+  },
+  "accentColor": "#36d3f5",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

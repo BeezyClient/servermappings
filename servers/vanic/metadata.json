@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "vanic",
+  "name": "Vanic Network",
+  "addresses": {
+    "primary": "vanic.gg",
+    "suffixes": [
+      "vanic.gg"
+    ]
+  },
+  "accentColor": "#5781dc",
+  "minecraft": {
+    "versions": [
+      "1.7.*",
+      "1.8.*"
+    ],
+    "recommended": "1.8.9"
+  }
+}

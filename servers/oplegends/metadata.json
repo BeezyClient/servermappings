@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "oplegends",
+  "name": "OPLegends",
+  "addresses": {
+    "primary": "play.oplegends.com",
+    "suffixes": [
+      "oplegends.com"
+    ]
+  },
+  "accentColor": "#f4c47b",
+  "minecraft": {
+    "versions": [
+      "1.7.*",
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.1"
+    ],
+    "recommended": "26.1.2"
+  }
+}

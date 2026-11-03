@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "cytooxien",
+  "name": "Cytooxien",
+  "addresses": {
+    "primary": "cytooxien.de",
+    "suffixes": [
+      "cytooxien.de",
+      "cytooxien.net",
+      "realms.direct"
+    ]
+  },
+  "accentColor": "#fbb012",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

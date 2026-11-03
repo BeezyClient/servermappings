@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "zenpvp",
+  "name": "ZenPvP",
+  "addresses": {
+    "primary": "play.zenpvp.net",
+    "suffixes": [
+      "zenpvp.net"
+    ]
+  },
+  "accentColor": "#18b37c",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

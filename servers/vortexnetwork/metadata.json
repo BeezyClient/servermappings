@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "vortexnetwork",
+  "name": "Vortex Network",
+  "addresses": {
+    "primary": "mc.vortexnetwork.net",
+    "suffixes": [
+      "vortexnetwork.net"
+    ]
+  },
+  "accentColor": "#e15b19",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

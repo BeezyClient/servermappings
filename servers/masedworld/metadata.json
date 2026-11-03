@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "masedworld",
+  "name": "MasedWorld",
+  "addresses": {
+    "primary": "mc.masedworld.net",
+    "suffixes": [
+      "masedworld.net"
+    ]
+  },
+  "accentColor": "#3ceefb",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*"
+    ],
+    "recommended": "1.20.6"
+  }
+}

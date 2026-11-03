@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "funtime",
+  "name": "Fun Time",
+  "addresses": {
+    "primary": "play.funtime.su",
+    "suffixes": [
+      "funtime.su"
+    ]
+  },
+  "accentColor": "#e3c70d",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.1",
+      "26.2",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

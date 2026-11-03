@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "pikomc",
+  "name": "PikoMC",
+  "addresses": {
+    "primary": "pikomc.pl",
+    "suffixes": [
+      "pikomc.pl"
+    ]
+  },
+  "accentColor": "#f7a40d",
+  "minecraft": {
+    "versions": [
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

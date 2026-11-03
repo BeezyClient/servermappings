@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "mcprison",
+  "name": "MCPrison",
+  "addresses": {
+    "primary": "mcprison.com",
+    "suffixes": [
+      "mcprison.com"
+    ]
+  },
+  "accentColor": "#71e3fa",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "mcpvp",
+  "name": "PvP Club",
+  "addresses": {
+    "primary": "mcpvp.club",
+    "suffixes": [
+      "mcpvp.club"
+    ]
+  },
+  "accentColor": "#e33a4b",
+  "minecraft": {
+    "versions": [
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

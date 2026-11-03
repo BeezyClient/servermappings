@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "hypixel",
+  "name": "Hypixel",
+  "description": "A large minigames network: SkyBlock, Bed Wars, SkyWars, Duels and more.",
+  "addresses": {
+    "primary": "mc.hypixel.net",
+    "suffixes": [
+      "hypixel.net"
+    ]
+  },
+  "accentColor": "#f2b134",
+  "minecraft": {
+    "versions": [
+      "1.8.*",
+      "1.21.*",
+      "26.1.*",
+      "26.2.*",
+      "26.3.*"
+    ],
+    "recommended": "1.8.9"
+  },
+  "regions": [
+    "NA"
+  ],
+  "languages": [
+    "en"
+  ],
+  "gamemodes": [
+    "minigames",
+    "skyblock",
+    "bedwars",
+    "skywars",
+    "duels"
+  ],
+  "links": {
+    "website": "https://hypixel.net/"
+  },
+  "presence": {
+    "gameName": "Hypixel"
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/BeezyClient/servermappings/schema/metadata.schema.json",
+  "title": "Beezy server mapping",
+  "description": "servers/<id>/metadata.json: one Minecraft server as Beezy Client shows it. Read CONTRIBUTING.md before editing.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "addresses",
+    "accentColor",
+    "minecraft"
+  ],
+  "properties": {
+    "$schema": {
+      "description": "Optional editor hint, ignored by the build.",
+      "type": "string",
+      "maxLength": 200
+    },
+    "id": {
+      "description": "Same as the folder name. Lowercase letters and digits, optionally separated by single dashes.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "minLength": 2,
+      "maxLength": 32
+    },
+    "name": {
+      "description": "The server's display name.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 32
+    },
+    "description": {
+      "description": "One English sentence about the server, shown under its name.",
+      "type": "string",
+      "minLength": 16,
+      "maxLength": 120
+    },
+    "addresses": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary",
+        "suffixes"
+      ],
+      "properties": {
+        "primary": {
+          "description": "What a player types into Multiplayer: host or host:port, on one of your own suffixes.",
+          "$ref": "#/$defs/hostPort"
+        },
+        "ping": {
+          "description": "Only for servers behind an SRV record: the record's target, which Beezy pings instead of primary.",
+          "$ref": "#/$defs/hostPort"
+        },
+        "suffixes": {
+          "description": "Registrable domains you own (no subdomain). Any address ending in one of these is recognised as this server.",
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 10,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/domain"
+          }
+        }
+      }
+    },
+    "accentColor": {
+      "description": "#rrggbb, used for the monogram and highlights when there is no artwork.",
+      "$ref": "#/$defs/color"
+    },
+    "minecraft": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "versions",
+        "recommended"
+      ],
+      "properties": {
+        "versions": {
+          "description": "Versions the server accepts: exact (1.21.4), a minor line (1.21.*) or a release line (26.1).",
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 32,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[0-9]{1,2}\\.[0-9]{1,2}(\\.([0-9]{1,2}|\\*))?$"
+          }
+        },
+        "recommended": {
+          "description": "The exact version Beezy suggests for joining. Must be covered by versions.",
+          "type": "string",
+          "pattern": "^[0-9]{1,2}\\.[0-9]{1,2}(\\.[0-9]{1,2})?$"
+        }
+      }
+    },
+    "regions": {
+      "description": "Where the server's machines are. Continent codes.",
+      "type": "array",
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "AF",
+          "AS",
+          "EU",
+          "NA",
+          "OC",
+          "SA"
+        ]
+      }
+    },
+    "languages": {
+      "description": "Languages spoken on the server, as ISO 639-1 codes with an optional region (en, pt-BR).",
+      "type": "array",
+      "maxItems": 12,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]{2}(-[A-Z]{2})?$"
+      }
+    },
+    "gamemodes": {
+      "description": "What players do on the server, most important first.",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/gamemode"
+      }
+    },
+    "tags": {
+      "description": "Short extra keywords, lowercase. Reviewed by hand.",
+      "type": "array",
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+        "maxLength": 24
+      }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "website": {
+          "$ref": "#/$defs/https"
+        },
+        "discord": {
+          "description": "A permanent invite: https://discord.gg/<code> or https://discord.com/invite/<code>.",
+          "type": "string",
+          "pattern": "^https://(discord\\.gg|discord\\.com/invite)/[A-Za-z0-9-]{2,32}$"
+        },
+        "store": {
+          "$ref": "#/$defs/https"
+        },
+        "wiki": {
+          "$ref": "#/$defs/https"
+        },
+        "rules": {
+          "$ref": "#/$defs/https"
+        },
+        "support": {
+          "$ref": "#/$defs/https"
+        }
+      }
+    },
+    "presence": {
+      "description": "How Beezy names the server in Discord Rich Presence and the friends list.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gameName"
+      ],
+      "properties": {
+        "gameName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        }
+      }
+    },
+    "modpack": {
+      "description": "A Modrinth modpack players must run. Join offers to install it first.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "project"
+      ],
+      "properties": {
+        "project": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]{2,64}$"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9]{8}$"
+        }
+      }
+    },
+    "offline": {
+      "description": "True while the server is temporarily down (maintenance, between seasons). It stays mapped but is not featured.",
+      "type": "boolean"
+    },
+    "inactive": {
+      "description": "Set by maintainers when the server has closed or been unreachable for 3 months. Inactive servers are left out of the index.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "since",
+        "reason"
+      ],
+      "properties": {
+        "since": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "reason": {
+          "enum": [
+            "unreachable",
+            "closed",
+            "requested",
+            "policy"
+          ]
+        }
+      }
+    },
+    "maintainers": {
+      "description": "GitHub usernames allowed to update this entry without proving ownership again.",
+      "type": "array",
+      "maxItems": 10,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9](-?[A-Za-z0-9]){0,38}$"
+      }
+    }
+  },
+  "$defs": {
+    "domain": {
+      "type": "string",
+      "pattern": "^([a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z]{2,63}$",
+      "maxLength": 253
+    },
+    "hostPort": {
+      "type": "string",
+      "pattern": "^([a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z]{2,63}(:[0-9]{1,5})?$",
+      "maxLength": 128
+    },
+    "color": {
+      "type": "string",
+      "pattern": "^#[0-9a-f]{6}$"
+    },
+    "https": {
+      "type": "string",
+      "pattern": "^https://[a-z0-9.-]+\\.[a-z]{2,63}(/[^\\s]*)?$",
+      "maxLength": 200
+    },
+    "gamemode": {
+      "enum": [
+        "anarchy",
+        "battle-royale",
+        "bedwars",
+        "boxpvp",
+        "build-battle",
+        "creative",
+        "duels",
+        "earth",
+        "economy",
+        "factions",
+        "gens",
+        "hardcore",
+        "hcf",
+        "hide-and-seek",
+        "kitpvp",
+        "lifesteal",
+        "minigames",
+        "modded",
+        "murder-mystery",
+        "oneblock",
+        "parkour",
+        "practice",
+        "prison",
+        "pve",
+        "pvp",
+        "roleplay",
+        "skyblock",
+        "skywars",
+        "smp",
+        "survival",
+        "towny",
+        "uhc",
+        "vanilla",
+        "other"
+      ]
+    }
+  }
+}

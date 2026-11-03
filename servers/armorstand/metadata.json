@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "armorstand",
+  "name": "armorstand.net",
+  "addresses": {
+    "primary": "armorstand.net",
+    "suffixes": [
+      "armorstand.net"
+    ]
+  },
+  "accentColor": "#d9945e",
+  "minecraft": {
+    "versions": [
+      "26.2",
+      "26.1"
+    ],
+    "recommended": "26.1.2"
+  }
+}

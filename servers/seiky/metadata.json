@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "seiky",
+  "name": "Seiky Network",
+  "addresses": {
+    "primary": "seiky.net",
+    "suffixes": [
+      "seiky.net",
+      "kupiruke.com",
+      "smitesmp.lol",
+      "starsmp.lol"
+    ]
+  },
+  "accentColor": "#199ded",
+  "minecraft": {
+    "versions": [
+      "1.21.*"
+    ],
+    "recommended": "1.21.1"
+  }
+}

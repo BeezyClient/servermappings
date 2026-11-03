@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "regorland",
+  "name": "Regorland",
+  "addresses": {
+    "primary": "regorland.net",
+    "suffixes": [
+      "regorland.net",
+      "regorland.com",
+      "regorland.es"
+    ]
+  },
+  "accentColor": "#c40407",
+  "minecraft": {
+    "versions": [
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}

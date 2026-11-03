@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schema/metadata.schema.json",
+  "id": "diamondfire",
+  "name": "DiamondFire",
+  "addresses": {
+    "primary": "mcdiamondfire.com",
+    "suffixes": [
+      "mcdiamondfire.com",
+      "diamondfire.games"
+    ]
+  },
+  "accentColor": "#4983af",
+  "minecraft": {
+    "versions": [
+      "1.7.*",
+      "1.8.*",
+      "1.12.*",
+      "1.16.*",
+      "1.17.*",
+      "1.18.*",
+      "1.19.*",
+      "1.20.*",
+      "1.21.*",
+      "26.3"
+    ],
+    "recommended": "26.3"
+  }
+}
